@@ -27,14 +27,14 @@ body {
   position: absolute;
   top: 0.625rem;
   left: 1.875rem;
-  color: #af0000;
+  color: #fd0707;
   font-size: 1.25rem;
   letter-spacing: 0.375rem;
 }
 .logo {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #860000;
+  background-color: #a00303;
   border: 2px solid #000000;
   border-radius: 100%;
 }
@@ -44,7 +44,7 @@ body {
   position: absolute;
   top: 1rem;
   left: 5rem;
-  color: #b90101;
+  color: #ee0c0c;
   font-size: 1.063rem;
   font-weight: bolder;
   letter-spacing: 0.563rem;
@@ -59,7 +59,7 @@ body {
   top: 70%;
 }
 .label-search {
-  color: #c2c0c0;
+  color: #e2dede;
   font-family: "Poppins", sans-serif;
   letter-spacing: 5px;
   text-transform: capitalize;
@@ -90,7 +90,7 @@ body {
   height: 6rem;
   border: 3px solid #e0e0e0;
   border-radius: 50%;
-  border-top-color: #c50101;
+  border-top-color: #ec0e0e;
   animation: spinner 0.6s infinite linear;
 }
 @keyframes spinner {
@@ -105,7 +105,7 @@ body {
   align-items: center;
 }
 h2 {
-  color: #af0000;
+  color: #ec1111;
 }
 
 .poster-img {
@@ -150,7 +150,7 @@ footer {
   margin-bottom: 1rem;
 }
 .brand {
-  color: #c50101;
+  color: #f10f0f;
   text-transform: uppercase;
 }
 .copy-icon {
