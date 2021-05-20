@@ -1,0 +1,96 @@
+.single-img {
+  margin: 2rem;
+  margin-top: 2.35rem;
+  height: 450px;
+  width: 20rem;
+  border: 3px solid #121212;
+  border-radius: 3%;
+}
+.singleMovie-container {
+  position: absolute;
+  top: 2.2rem;
+  left: 25rem;
+}
+.title {
+  color: #bd0000;
+}
+.year {
+  color: #bbbbbb;
+  text-transform: capitalize;
+}
+.plot {
+  color: #cfc8a9;
+
+  margin-right: 4rem;
+  padding-top: 1.4rem;
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4rem;
+}
+.div {
+  color: #ffbd69;
+  font-size: 1.17rem;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+
+span {
+  color: #e7e7e7;
+  padding-left: 0.5rem;
+  font-weight: 400;
+}
+button {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #94d0cc;
+  padding: 0.3rem;
+  background-color: #94d0cc;
+  border-radius: 10%;
+  color: #0a011d;
+  font-weight: 550;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.classofbtn {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 930px) {
+  .classofbtn {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 830px) {
+  .singleMovie-container {
+    position: static;
+    margin-left: 1.5rem;
+  }
+  .mobile-poster {
+    display: flex;
+    justify-content: center;
+  }
+  .single-img {
+    margin: 0px;
+    margin-top: 2.35rem;
+  }
+  .title-year {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .plot {
+    width: 100%;
+  }
+  .classofbtn {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .div {
+    font-size: 1rem;
+  }
+}

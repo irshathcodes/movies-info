@@ -1,0 +1,196 @@
+/* #e84545 - red */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.hero-img {
+  width: 100%;
+  height: 28.3rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./heroimg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-container {
+  /* font-family: "Nunito Sans", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 0.625rem;
+  left: 1.875rem;
+  color: #af0000;
+  font-size: 1.25rem;
+  letter-spacing: 0.375rem;
+}
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #860000;
+  border: 2px solid #000000;
+  border-radius: 100%;
+}
+.company-name {
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+  color: #b90101;
+  font-size: 1.063rem;
+  font-weight: bolder;
+  letter-spacing: 0.563rem;
+  text-transform: uppercase;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 70%;
+}
+.label-search {
+  color: #c2c0c0;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  text-shadow: 0 0 3px #313030, 0 0 5px #000000;
+}
+.input-class {
+  width: 50%;
+  height: 2.5rem;
+  border: 2px solid #c50101;
+  resize: none;
+  outline: none;
+  background-color: #121212;
+  color: #ffffff;
+}
+.input-class::placeholder {
+  text-transform: capitalize;
+}
+.icons-container {
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  border-top-color: #c50101;
+  animation: spinner 0.6s infinite linear;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color: #af0000;
+}
+
+.poster-img {
+  width: auto;
+  height: 350px;
+  width: 100%;
+}
+.poster-container {
+  width: 90vw;
+  max-width: 1470px;
+  display: grid;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+.all-info:hover {
+  box-shadow: 0 0 20px #969696;
+}
+p {
+  color: #c2c0c0;
+}
+.end {
+  font-family: "Poppins", sans-serif;
+  color: #c2c0c0;
+  font-size: 1.6rem;
+
+  text-align: center;
+  letter-spacing: 1rem;
+}
+.underline {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 2px;
+  background-color: #ffbd69;
+}
+footer {
+  margin-top: 1rem;
+  text-align: center;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+.brand {
+  color: #c50101;
+  text-transform: uppercase;
+}
+.copy-icon {
+  font-size: 1.1rem;
+}
+.email {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  margin-right: -0.3rem;
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .company-name {
+    font-size: 0.8rem;
+  }
+  .logo {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  .label-search {
+    font-size: 1.2rem;
+  }
+  .input-class {
+    height: 2rem;
+    width: 70%;
+  }
+  .poster-container {
+    padding-top: 1.8rem;
+  }
+  .end {
+    font-size: 1.2rem;
+  }
+  .reserved {
+    display: block;
+  }
+  .error-report {
+    font-size: 1rem;
+  }
+  .loading {
+    width: 3rem;
+    height: 3rem;
+  }
+}
