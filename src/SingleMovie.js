@@ -11,7 +11,7 @@ const SingleMovie = () => {
   const { loading, setLoading, setError } = useMyContextApi();
 
   const { id } = useParams();
-  const url = `http://www.omdbapi.com/?apikey=78deb654&i=${id}`;
+  const url = `https://www.omdbapi.com/?apikey=78deb654&i=${id}`;
   const fetchId = async () => {
     try {
       setLoading(true);

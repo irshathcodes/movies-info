@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState({ showError: false, msg: "" });
 
-  const url = `http://www.omdbapi.com/?apikey=78deb654&s=${query}`;
+  const url = `https://www.omdbapi.com/?apikey=78deb654&s=${query}`;
   const MyFetch = () => {
     const fetchApi = async () => {
       setLoading(true);
