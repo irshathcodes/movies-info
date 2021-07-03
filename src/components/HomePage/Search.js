@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from "react";
-
-import { useMyContextApi } from "./context";
+import { useRef, useEffect } from "react";
+import { useMyContextApi } from "../../context";
 
 const Search = () => {
   const { setQuery, error } = useMyContextApi();

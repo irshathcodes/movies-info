@@ -1,5 +1,3 @@
-import React from "react";
-
 import { AiOutlineMail, AiOutlineCopyright } from "react-icons/ai";
 
 const Footer = () => {

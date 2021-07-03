@@ -9,32 +9,29 @@ const AppProvider = ({ children }) => {
   const [error, setError] = useState({ showError: false, msg: "" });
 
   const url = `https://www.omdbapi.com/?apikey=78deb654&s=${query}`;
-  const MyFetch = () => {
-    const fetchApi = async () => {
-      setLoading(true);
-      try {
-        const response = await fetch(url);
-        const allData = await response.json();
+  const fetchApi = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(url);
+      const allData = await response.json();
 
-        if (allData.Response === "True") {
-          setData(allData.Search);
-          setError({ showError: false, msg: "" });
-        } else if (query.length === 0) {
-          setQuery("avengers");
-        } else {
-          setError({ showError: true, msg: allData.Error });
-        }
-        setLoading(false);
-      } catch (error) {
-        console.log(error);
+      if (allData.Response === "True") {
+        setData(allData.Search);
+        setError({ showError: false, msg: "" });
+      } else if (query.length === 0) {
+        setQuery("avengers");
+      } else {
+        setError({ showError: true, msg: allData.Error });
       }
-    };
-
-    useEffect(() => {
-      fetchApi();
-    }, [query]);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+    }
   };
-  MyFetch();
+
+  useEffect(() => {
+    fetchApi();
+  }, [query]);
   return (
     <myContext.Provider
       value={{

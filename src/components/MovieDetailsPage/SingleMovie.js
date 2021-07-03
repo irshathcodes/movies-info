@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Loading from "./Loading";
-import { useMyContextApi } from "./context";
+import Loading from "../HomePage/Loading";
+import { useMyContextApi } from "../../context";
 import MovieDetails from "./MovieDetails";
 
 import "./singleMovie.css";
@@ -30,6 +30,7 @@ const SingleMovie = () => {
 
   useEffect(() => {
     fetchId();
+    // eslint-disable-next-line
   }, []);
 
   if (loading) {
