@@ -1,6 +1,10 @@
+<a href="https://moviesinfoo.netlify.app/" >
+
 <h3>MOVIES INFO</h3>
 
 ![moviesinfo](./src/assets/moviesinfo.png)
+
+</a>
 
 MOVIES INFO is an online database of information related to Films, Television programs, Series, including Lead cast, Plot summaries, Ratings, Director, Genre, Released year, Available languages.You can search any movie or series you want.
 
